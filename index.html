@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sema</title>
-  <meta name="description" content="Sema is a private household assistant that connects to authorised Google services.">
+  <title>Sema, a private household assistant</title>
+  <meta name="description" content="Sema is a private household assistant for the Setyamarta household. This public page explains what Sema does, how it uses authorised Google account data, and where to read the privacy policy. No sign-in is required.">
+  <meta name="robots" content="index,follow">
   <link rel="icon" type="image/png" sizes="120x120" href="/sema-logo.png">
   <link rel="stylesheet" href="/styles.css">
 </head>
@@ -14,48 +15,79 @@
       <img src="/sema-logo.png" alt="Sema logo">
       <span>Sema</span>
     </a>
+    <nav aria-label="Primary">
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/terms.html">Terms of service</a>
+    </nav>
   </header>
 
   <main>
+    <p class="notice">This website is public. You do not need to sign in, create an account, enter a password, or grant any permission to read this homepage, the privacy policy, or the terms of service. There is no login form on this site.</p>
+
     <section class="hero" aria-labelledby="page-title">
       <img class="hero-logo" src="/sema-logo.png" alt="">
       <p class="eyebrow">Private household assistant</p>
       <h1 id="page-title">Sema</h1>
-      <p class="lead">A private assistant that lets authorised members of the Setyamarta household work with their own connected services.</p>
-      <p>Sema’s purpose is to let an authorised household member use their own Google account through one private assistant. Sema can read or organise Gmail, check and manage Calendar events, work with Drive files and documents, and manage Contacts and Tasks when the account owner grants the relevant permission.</p>
-      <h2>What Sema does</h2>
-      <ul>
-        <li>finds and organises information requested by the account owner;</li>
-        <li>checks calendars and helps manage events and tasks;</li>
-        <li>works with authorised Drive files and supported documents; and</li>
-        <li>returns the requested result to the authorised household user.</li>
-      </ul>
-      <p>This information page is public and does not require a sign-in. Sema does not request Google Maps access.</p>
+      <p class="lead">Sema is a private assistant operated by Beltsazar Krisetya for authorised members of the Setyamarta household. Its purpose is to help those household members work with their own Google accounts after they grant permission.</p>
+      <p>Sema is not a public product, marketplace, or social network. It is not a Google product. Google and Google product names are trademarks of Google LLC. Sema is not affiliated with, sponsored by, or endorsed by Google.</p>
       <div class="actions">
-        <a class="button primary" href="/privacy.html">Privacy policy</a>
-        <a class="button" href="/terms.html">Terms of service</a>
+        <a class="button primary" href="/privacy.html">Read the privacy policy</a>
+        <a class="button" href="/terms.html">Read the terms of service</a>
       </div>
     </section>
 
-    <section class="card" aria-labelledby="access-title">
-      <h2 id="access-title">Connected services</h2>
-      <p>Access depends on the scopes granted to each Google account. Sema does not request Google Maps access. Sema’s account has a wider service set than the other authorised household accounts.</p>
-      <p>The site itself does not provide a sign-in form, collect Google data, use advertising trackers, or sell information.</p>
+    <section class="card" aria-labelledby="purpose-title">
+      <h2 id="purpose-title">Purpose of the application</h2>
+      <p>The purpose of Sema is to provide a private household assistant that can carry out requested tasks against an authorised Google account. An account owner first grants Sema permission through Google’s OAuth consent screen. After that grant, an authorised household user can ask Sema to find, summarise, organise, create, update, or send information that already belongs to that Google account.</p>
+      <p>Sema exists so that household members do not have to switch between several Google products for ordinary household work such as finding a message, checking whether a calendar is free, locating a file, updating a contact, or adding a task. Sema uses Google user data only to provide or improve those user-facing assistant features. It does not use Google user data for advertising, sale, credit decisions, or training of non-personalized artificial intelligence models.</p>
     </section>
 
-    <section class="card" aria-labelledby="contact-title">
-      <h2 id="contact-title">Questions</h2>
-      <p>For privacy or access questions, contact <a href="mailto:beltsazar.krisetya.24@ucl.ac.uk">beltsazar.krisetya.24@ucl.ac.uk</a>.</p>
+    <section class="card" aria-labelledby="who-title">
+      <h2 id="who-title">Who Sema is for</h2>
+      <p>Sema is for authorised members of the Setyamarta household. The current authorised Google accounts are household accounts owned or administered by those members. A person who does not own or administer a connected account cannot use Sema to reach that account.</p>
+      <p>This website does not provide a way to create an account, sign in, or connect a Google account. Account connection happens only through Google’s own OAuth consent flow on a private host, not on this public information site.</p>
+    </section>
+
+    <section class="card" aria-labelledby="features-title">
+      <h2 id="features-title">Functionality and features</h2>
+      <p>After an account owner grants the relevant Google permission, Sema can provide the following user-facing features.</p>
+      <p>Mail: Sema can search, read, label, organise, draft, and send Gmail messages when asked. It uses Gmail content only to complete the requested mail task, such as finding an email, preparing a reply, or applying a label.</p>
+      <p>Calendar: Sema can list calendars, read events, check availability, create or update events, and send event changes when asked. It uses Calendar data only to complete the requested scheduling task.</p>
+      <p>Files and documents: Sema can find Drive files, read metadata and permitted file content, and work with Docs, Sheets, or Slides when asked. It uses Drive and document data only to complete the requested file or document task.</p>
+      <p>Contacts and people: Sema can look up and update Contacts or People records when asked. It uses contact data only to complete the requested address-book task.</p>
+      <p>Tasks: Sema can list, create, update, and complete Google Tasks when asked. It uses task data only to complete the requested reminder or to-do task.</p>
+      <p>Wider household account features: the Sema household account may also use Chat, Classroom, Drive Activity, Drive Labels, Forms, Sites, Meet, Apps Script, Analytics, Search Console, AdSense, Ads, YouTube, Photos, and Photo Picker when those scopes have been granted and a requested feature needs them. Google Maps is not requested.</p>
+    </section>
+
+    <section class="card" aria-labelledby="data-title">
+      <h2 id="data-title">How Sema uses Google user data</h2>
+      <p>Sema accesses Google user data only after the account owner grants OAuth permission. The data accessed depends on the scopes granted to that account. Sema then uses that data to provide the assistant feature the authorised user requested.</p>
+      <p>Examples: if a user asks Sema to find last week’s school email, Sema may read Gmail messages and return the relevant result. If a user asks whether Saturday afternoon is free, Sema may read Calendar events and return availability. If a user asks Sema to locate a household spreadsheet, Sema may search Drive and open the matching file. If a user asks Sema to add milk to a shopping task list, Sema may create or update a Google Task.</p>
+      <p>Sema does not collect Google user data through this website. This homepage, privacy policy, and terms page do not receive Google account content, OAuth tokens, or sign-in credentials. Google user data is processed on a private, access-controlled host after a successful OAuth grant.</p>
+      <p>A full description of the Google user data Sema accesses, uses, stores, shares, retains, deletes, and protects is in the <a href="/privacy.html">Sema privacy policy</a>. That privacy policy is the same policy linked from the Google OAuth consent screen.</p>
+    </section>
+
+    <section class="card" aria-labelledby="public-title">
+      <h2 id="public-title">This site is not a login page</h2>
+      <p>This homepage is an information page about Sema. It is hosted at https://sema.krisetya.com/ and can be read without authentication. There is no username field, password field, OAuth button, cookie consent wall, or account-creation form on this page.</p>
+      <p>If a reviewer reached a Google account chooser or another sign-in screen, that screen was not this homepage. Please open https://sema.krisetya.com/ directly in a browser with no Google session required.</p>
+    </section>
+
+    <section class="card" aria-labelledby="developer-title">
+      <h2 id="developer-title">Developer and contact</h2>
+      <p>Application name: Sema. Developer: Beltsazar Krisetya. Organisation: Setyamarta household. Public information site: https://sema.krisetya.com/</p>
+      <p>Privacy policy: <a href="/privacy.html">https://sema.krisetya.com/privacy.html</a>. Terms of service: <a href="/terms.html">https://sema.krisetya.com/terms.html</a>.</p>
+      <p>Questions about this application, privacy, deletion, or access can be sent to beltsazar.krisetya.24 [at] ucl.ac.uk.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <span>© 2026 Sema</span>
     <nav aria-label="Footer">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
+      <a href="/privacy.html">Privacy policy</a>
+      <a href="/terms.html">Terms of service</a>
     </nav>
-    <small>Google and Google product names are trademarks of Google LLC. Sema is not affiliated with or endorsed by Google.</small>
+    <small>Google and Google product names are trademarks of Google LLC. Sema is not affiliated with or endorsed by Google. This public website does not require a login.</small>
   </footer>
 </body>
 </html>
